@@ -1,0 +1,33 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_golden_apple": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:golden_apple"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_golden_apple"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:first_crop/bamboo",
+      "pklfdp:first_crop/carrot",
+      "pklfdp:first_crop/cocoa_beans",
+      "pklfdp:first_crop/glow_berries",
+      "pklfdp:first_crop/nether_wart",
+      "pklfdp:first_crop/potato",
+      "pklfdp:first_crop/sweet_berries",
+      "pklfdp:first_crop/twisting_vines",
+      "pklfdp:first_crop/weeping_vines"
+    ]
+  }
+}

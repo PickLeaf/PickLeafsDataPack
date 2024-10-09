@@ -1,0 +1,56 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "pklfdp.enchantment.item_hook",
+    "fallback": "掉落物钩"
+  },
+  "effects": {
+    "minecraft:hit_block": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:item_hook/hit"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:player"
+          }
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:item_hook/mark_run"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:armor_stand",
+            "periodic_tick": 2
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 2,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 2,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "slots": [
+    "mainhand",
+    "feet"
+  ],
+  "supported_items": "#minecraft:enchantable/mining",
+  "primary_items": [],
+  "weight": 1
+}
