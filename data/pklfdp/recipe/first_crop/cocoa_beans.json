@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:stonecutting",
+  "group": "first_crop",
+  "ingredient": [
+    {
+      "item": "minecraft:golden_apple"
+    }
+  ],
+	"result": {
+		"id": "minecraft:cocoa_beans"
+	}
+}

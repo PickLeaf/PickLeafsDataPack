@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:stonecutting",
+  "group": "dirt_variant",
+  "ingredient": [
+    {
+      "item": "minecraft:dirt"
+    }
+  ],
+	"result": {
+		"id": "minecraft:grass_block"
+	}
+}

@@ -1,0 +1,24 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+    {
+      "item": "minecraft:armor_stand"
+    },
+    {
+      "item": "minecraft:stick"
+    },
+    {
+      "item": "minecraft:stick"
+    }
+  ],
+	"result": {
+		"id": "minecraft:armor_stand",
+		"components": {
+			"minecraft:entity_data": {
+        "id": "minecraft:armor_stand",
+        "ShowArms": true
+      }
+		}
+	}
+}

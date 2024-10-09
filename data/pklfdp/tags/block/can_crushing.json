@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cobblestone",
+    "minecraft:gravel",
+    "minecraft:coarse_dirt",
+    "minecraft:polished_andesite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_granite",
+    "minecraft:quartz_block",
+    "minecraft:terracotta",
+    "minecraft:pumpkin",
+    "minecraft:dripstone_block",
+    "minecraft:purpur_block",
+    "#minecraft:wool"
+  ]
+}

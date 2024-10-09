@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "building",
+	"ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:vine"
+    }
+  ],
+	"result": {
+		"id": "minecraft:vine",
+		"count": 2
+	}
+}
