@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:orange_dye",
+    "minecraft:red_sand",
+    "minecraft:charcoal",
+    "minecraft:quartz",
+    "minecraft:gold_ingot",
+    "minecraft:honeycomb",
+    "minecraft:black_concrete",
+    "minecraft:diamond",
+    "minecraft:golden_axe",
+    "minecraft:amethyst_shard",
+    "minecraft:warped_fungus",
+    "minecraft:shulker_shell"
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_bone_meal": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:bone_meal"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_bone_meal"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:flowers_copy/allium",
+      "pklfdp:flowers_copy/azure_bluet",
+      "pklfdp:flowers_copy/blue_orchid",
+      "pklfdp:flowers_copy/cornflower",
+      "pklfdp:flowers_copy/dandelion",
+      "pklfdp:flowers_copy/fern",
+      "pklfdp:flowers_copy/hanging_roots",
+      "pklfdp:flowers_copy/lily_of_the_valley",
+      "pklfdp:flowers_copy/lily_pad",
+      "pklfdp:flowers_copy/orange_tulip",
+      "pklfdp:flowers_copy/oxeye_daisy",
+      "pklfdp:flowers_copy/pink_tulip",
+      "pklfdp:flowers_copy/poppy",
+      "pklfdp:flowers_copy/red_tulip",
+      "pklfdp:flowers_copy/seagrass",
+      "pklfdp:flowers_copy/short_grass",
+      "pklfdp:flowers_copy/small_dripleaf",
+      "pklfdp:flowers_copy/spore_blossom",
+      "pklfdp:flowers_copy/vine",
+      "pklfdp:flowers_copy/white_tulip",
+      "pklfdp:flowers_copy/wither_rose"
+    ]
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_observer": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:observer"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_observer"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:enchantment/mach_swing"
+    ]
+  }
+}

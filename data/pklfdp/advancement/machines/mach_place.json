@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dispenser": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dispenser"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_dispenser"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:enchantment/mach_place"
+    ]
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:logs",
+    "#minecraft:leaves",
+    "minecraft:mangrove_roots",
+    "minecraft:mushroom_stem",
+    "minecraft:red_mushroom_block",
+    "minecraft:brown_mushroom_block",
+    "minecraft:nether_wart_block",
+    "minecraft:warped_wart_block",
+    "minecraft:shroomlight",
+    "minecraft:bee_nest",
+    "minecraft:chorus_flower",
+    "minecraft:chorus_plant"
+  ]
+}

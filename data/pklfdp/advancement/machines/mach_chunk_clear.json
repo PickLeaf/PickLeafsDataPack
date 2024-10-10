@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_netherite_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:netherite_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_netherite_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:enchantment/mach_chunk_clear"
+    ]
+  }
+}

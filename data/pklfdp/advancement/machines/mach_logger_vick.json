@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_axe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_axe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_axe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:enchantment/mach_logger_vick"
+    ]
+  }
+}
