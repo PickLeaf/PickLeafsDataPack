@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_music_disc": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#pklfdp:music_disc"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_music_disc"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:music_disc/11",
+      "pklfdp:music_disc/13",
+      "pklfdp:music_disc/5",
+      "pklfdp:music_disc/blocks",
+      "pklfdp:music_disc/cat",
+      "pklfdp:music_disc/chirp",
+      "pklfdp:music_disc/creator",
+      "pklfdp:music_disc/creator_music_box",
+      "pklfdp:music_disc/far",
+      "pklfdp:music_disc/mall",
+      "pklfdp:music_disc/mellohi",
+      "pklfdp:music_disc/otherside",
+      "pklfdp:music_disc/pigstep",
+      "pklfdp:music_disc/precipice",
+      "pklfdp:music_disc/relic",
+      "pklfdp:music_disc/stal",
+      "pklfdp:music_disc/strad",
+      "pklfdp:music_disc/wait",
+      "pklfdp:music_disc/ward"
+    ]
+  }
+}

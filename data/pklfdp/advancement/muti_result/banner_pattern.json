@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_banner_pattern": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#pklfdp:banner_pattern"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_banner_pattern"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:banner_pattern/creeper",
+      "pklfdp:banner_pattern/flow",
+      "pklfdp:banner_pattern/flower",
+      "pklfdp:banner_pattern/globe",
+      "pklfdp:banner_pattern/guster",
+      "pklfdp:banner_pattern/mojang",
+      "pklfdp:banner_pattern/piglin",
+      "pklfdp:banner_pattern/skull"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_smithing_template": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#pklfdp:smithing_template"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_smithing_template"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:smithing_template/bolt",
+      "pklfdp:smithing_template/coast",
+      "pklfdp:smithing_template/dune",
+      "pklfdp:smithing_template/eye",
+      "pklfdp:smithing_template/flow",
+      "pklfdp:smithing_template/host",
+      "pklfdp:smithing_template/netherite",
+      "pklfdp:smithing_template/raiser",
+      "pklfdp:smithing_template/rib",
+      "pklfdp:smithing_template/sentry",
+      "pklfdp:smithing_template/shaper",
+      "pklfdp:smithing_template/silence",
+      "pklfdp:smithing_template/snout",
+      "pklfdp:smithing_template/spire",
+      "pklfdp:smithing_template/tide",
+      "pklfdp:smithing_template/vex",
+      "pklfdp:smithing_template/ward",
+      "pklfdp:smithing_template/wayfinder",
+      "pklfdp:smithing_template/wild"
+    ]
+  }
+}

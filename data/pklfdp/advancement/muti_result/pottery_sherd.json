@@ -1,0 +1,47 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pottery_sherd": {
+      "conditions": {
+        "items": [
+          {
+            "items": "#pklfdp:pottery_sherd"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_pottery_sherd"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:pottery_sherd/angler",
+      "pklfdp:pottery_sherd/archer",
+      "pklfdp:pottery_sherd/arms_up",
+      "pklfdp:pottery_sherd/blade",
+      "pklfdp:pottery_sherd/brewer",
+      "pklfdp:pottery_sherd/burn",
+      "pklfdp:pottery_sherd/danger",
+      "pklfdp:pottery_sherd/explorer",
+      "pklfdp:pottery_sherd/flow",
+      "pklfdp:pottery_sherd/friend",
+      "pklfdp:pottery_sherd/guster",
+      "pklfdp:pottery_sherd/heart",
+      "pklfdp:pottery_sherd/heartbreak",
+      "pklfdp:pottery_sherd/howl",
+      "pklfdp:pottery_sherd/miner",
+      "pklfdp:pottery_sherd/mourner",
+      "pklfdp:pottery_sherd/plenty",
+      "pklfdp:pottery_sherd/prize",
+      "pklfdp:pottery_sherd/scrape",
+      "pklfdp:pottery_sherd/sheaf",
+      "pklfdp:pottery_sherd/shelter",
+      "pklfdp:pottery_sherd/skull",
+      "pklfdp:pottery_sherd/snort"
+    ]
+  }
+}
