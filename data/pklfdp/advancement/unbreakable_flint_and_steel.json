@@ -1,11 +1,11 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_shears": {
+    "has_flint_and_steel": {
       "conditions": {
         "items": [
           {
-            "items": "minecraft:shears"
+            "items": "minecraft:flint_and_steel"
           }
         ]
       },
@@ -24,13 +24,13 @@
   },
   "requirements": [
     [
-      "has_shears",
+      "has_flint_and_steel",
       "has_iron_block"
     ]
   ],
   "rewards": {
     "recipes": [
-      "pklfdp:unbreakable_shears"
+      "pklfdp:unbreakable_flint_and_steel"
     ]
   }
 }
