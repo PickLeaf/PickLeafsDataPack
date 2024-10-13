@@ -52,3 +52,6 @@ data modify storage pklfdp:r random_tick."minecraft:glow_berries" \
 data modify storage pklfdp:r random_tick."minecraft:nether_wart" \
   set value {block:"minecraft:nether_wart",TH:2039,\
     item:"minecraft:nether_wart"}
+data modify storage pklfdp:r random_tick."minecraft:chorus_flower" \
+  set value {block:"minecraft:chorus_flower",TH:2039,\
+    item:"minecraft:chorus_plant"}
