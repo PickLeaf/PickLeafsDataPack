@@ -31,8 +31,6 @@ data modify storage pklfdp:r crushing."minecraft:terracotta" \
   set value {id:"minecraft:red_sand",count:1b}
 data modify storage pklfdp:r crushing."minecraft:quartz_block" \
   set value {id:"minecraft:quartz",count:3b}
-data modify storage pklfdp:r crushing."minecraft:purpur_block" \
-  set value {id:"minecraft:shulker_shell",count:1b}
 
 data modify storage pklfdp:r crushing."minecraft:white_wool" \
   set value {id:"minecraft:white_dye",count:3b}
