@@ -6,20 +6,20 @@
       "item": "minecraft:book"
     },
     {
-      "item": "minecraft:diamond_hoe"
+      "item": "minecraft:deepslate_diamond_ore"
     },
     {
-      "item": "minecraft:bone_block"
+      "item": "minecraft:wither_skeleton_skull"
     },
     {
-      "item": "minecraft:chorus_flower"
+      "item": "minecraft:chorus_plant"
     }
   ],
 	"result": {
 		"id": "minecraft:enchanted_book",
 		"components": {
 			"minecraft:stored_enchantments": {
-        "pklfdp:mach_random_tick": 1
+        "pklfdp:mach_feature": 1
       }
 		}
 	}
