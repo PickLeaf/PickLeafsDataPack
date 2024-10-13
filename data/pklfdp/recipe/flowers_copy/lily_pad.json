@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "building",
+	"ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:lily_pad"
+    }
+  ],
+	"result": {
+		"id": "minecraft:lily_pad",
+		"count": 2
+	}
+}

@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "building",
+	"ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:red_tulip"
+    }
+  ],
+	"result": {
+		"id": "minecraft:red_tulip",
+		"count": 2
+	}
+}

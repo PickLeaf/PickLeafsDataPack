@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:stonecutting",
+  "group": "pottery_sherd",
+  "ingredient": [
+    {
+      "tag": "pklfdp:pottery_sherd"
+    }
+  ],
+	"result": {
+		"id": "minecraft:angler_pottery_sherd"
+	}
+}

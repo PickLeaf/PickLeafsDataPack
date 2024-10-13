@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:sculk_shrieker"
+  },
+  "base": {
+    "item": "minecraft:enchanted_book"
+  },
+  "addition": {
+    "item": "minecraft:echo_shard"
+  },
+	"result": {
+		"id": "minecraft:enchanted_book",
+		"components": {
+			"minecraft:stored_enchantments": {
+        "swift_sneak": 3
+      }
+		}
+	}
+}

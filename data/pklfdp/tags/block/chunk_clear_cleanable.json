@@ -1,0 +1,27 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:gravel",
+    "minecraft:sand",
+    "minecraft:cobblestone",
+    "minecraft:deepslate",
+    "minecraft:cobbled_deepslate",
+    "minecraft:water",
+    "minecraft:lava",
+    "minecraft:netherrack",
+    "minecraft:blackstone",
+    "minecraft:end_stone",
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:dirt",
+    "minecraft:grass_block",
+    "minecraft:tuff",
+    "minecraft:bedrock",
+    "minecraft:kelp",
+    "minecraft:kelp_plant",
+    "minecraft:seagrass",
+    "minecraft:sea_pickle"
+  ]
+}

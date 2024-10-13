@@ -1,0 +1,15 @@
+{
+	"type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:piglin_head"
+  },
+  "addition": {
+    "item": "minecraft:nether_star"
+  },
+	"result": {
+		"id": "minecraft:dragon_head"
+	}
+}

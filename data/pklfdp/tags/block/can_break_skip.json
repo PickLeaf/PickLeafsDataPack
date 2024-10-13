@@ -1,0 +1,10 @@
+{
+  "replace": false,
+  "values": [
+    "#minecraft:air",
+    "minecraft:water",
+    "minecraft:lava",
+    "minecraft:bedrock",
+    "minecraft:end_portal"
+  ]
+}

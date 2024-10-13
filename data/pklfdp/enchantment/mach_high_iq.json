@@ -1,0 +1,113 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "pklfdp.enchantment.machine_high_iq",
+    "fallback": "机器：高智商"
+  },
+  "effects": {
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:high_iq/finalize"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:villager",
+            "periodic_tick": 20,
+            "location": {
+              "can_see_sky": true
+            }
+          }
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:high_iq/run"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:villager",
+                "periodic_tick": 20,
+                "nbt": "{Offers:{}}",
+                "stepping_on": {
+                  "block": {
+                    "blocks": "minecraft:decorated_pot"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                  "block": {
+                    "blocks": "minecraft:decorated_pot",
+                    "nbt": "{item:{}}"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": 2,
+              "predicate": {
+                "block": {
+                  "blocks": "minecraft:crafter",
+                  "state": {
+                    "triggered": "false"
+                  },
+                  "nbt": "{Items:[{}]}"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:high_iq/pop"
+        },
+        "requirements": {
+          "condition": "minecraft:entity_properties",
+          "entity": "this",
+          "predicate": {
+            "type": "minecraft:villager",
+            "periodic_tick": 20,
+            "location": {
+              "fluid": {
+                "fluids": "#minecraft:water"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "slots": [
+    "head"
+  ],
+  "supported_items": "minecraft:wither_skeleton_skull",
+  "primary_items": [],
+  "weight": 1
+}

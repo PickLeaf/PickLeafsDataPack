@@ -1,0 +1,22 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:cobblestone",
+    "minecraft:gravel",
+    "minecraft:coarse_dirt",
+    "minecraft:polished_andesite",
+    "minecraft:polished_diorite",
+    "minecraft:polished_granite",
+    "minecraft:quartz_block",
+    "minecraft:terracotta",
+    "minecraft:pumpkin",
+    "minecraft:purpur_block",
+    "minecraft:amethyst_cluster",
+    "minecraft:large_amethyst_bud",
+    "minecraft:medium_amethyst_bud",
+    "minecraft:small_amethyst_bud",
+    "minecraft:ancient_debris",
+    "minecraft:sculk_shrieker",
+    "#minecraft:wool"
+  ]
+}

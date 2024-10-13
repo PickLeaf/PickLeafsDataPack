@@ -1,0 +1,150 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "pklfdp.enchantment.machine_feature",
+    "fallback": "机器：地物"
+  },
+  "effects": {
+    "minecraft:post_attack": [
+      {
+        "affected": "victim",
+        "enchanted": "victim",
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:feature/run"
+        },
+        "requirements": {
+          "condition": "minecraft:all_of",
+          "terms": [
+            {
+              "condition": "minecraft:damage_source_properties",
+              "predicate": {
+                "direct_entity": {
+                  "type": "minecraft:wind_charge"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": 1,
+              "predicate": {
+                "can_see_sky": true
+              }
+            },
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}"
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:feature/finalize"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 20
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "blocks": "minecraft:crafter"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:feature/load"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 20
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:entity_properties",
+                "entity": "this",
+                "predicate": {
+                  "nbt": "{ArmorItems:[{components:{\"minecraft:custom_data\":{\"pklfdp:r\":{}}}}]}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:feature/init"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:piglin",
+                "flags": {
+                  "is_on_ground": true
+                },
+                "stepping_on": {
+                  "block": {
+                    "blocks": "minecraft:crafter"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "slots": [
+    "mainhand"
+  ],
+  "supported_items": "minecraft:golden_pickaxe",
+  "primary_items": [],
+  "weight": 1
+}

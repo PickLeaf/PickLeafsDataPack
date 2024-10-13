@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:stonecutting",
+  "group": "smithing_template",
+  "ingredient": [
+    {
+      "tag": "pklfdp:smithing_template"
+    }
+  ],
+	"result": {
+		"id": "minecraft:netherite_upgrade_smithing_template"
+	}
+}

@@ -1,0 +1,23 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"category": "misc",
+  "pattern": [
+    "NBN",
+    "P P",
+    "P P"
+  ],
+	"key": {
+    "B": {
+      "item": "minecraft:breeze_rod"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "P": {
+      "item": "minecraft:phantom_membrane"
+    }
+  },
+	"result": {
+		"id": "minecraft:elytra"
+	}
+}

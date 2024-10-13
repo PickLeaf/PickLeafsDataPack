@@ -1,0 +1,247 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "pklfdp.enchantment.machine_edotensei",
+    "fallback": "机器：秽土转生"
+  },
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:edotensei/init"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:armor_stand",
+                "flags": {
+                  "is_on_ground": true
+                },
+                "stepping_on": {
+                  "block": {
+                    "blocks": "minecraft:crafter"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                  "block": {
+                    "nbt": "{components:{\"minecraft:custom_data\":{\"pklfdp:HasMachine\":1b}}}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:edotensei/finalize"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 20
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "blocks": "minecraft:crafter"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:edotensei/wt"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 10
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "state": {
+                    "triggered": "false"
+                  },
+                  "nbt": "{Items:[{Slot:4b}],crafting_ticks_remaining:0}"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": 1,
+              "predicate": {
+                "fluid": {
+                  "fluids": "minecraft:water"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:edotensei/lv"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 10
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "state": {
+                    "triggered": "false"
+                  },
+                  "nbt": "{Items:[{Slot:4b}],crafting_ticks_remaining:0}"
+                }
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "offsetY": 1,
+              "predicate": {
+                "fluid": {
+                  "fluids": "minecraft:lava"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:edotensei/summon"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 10
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "state": {
+                    "triggered": "false"
+                  },
+                  "nbt": "{components:{\"minecraft:custom_data\":{\"pklfdp:preSummon\":{}}},crafting_ticks_remaining:0}"
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:spawn_particles",
+          "particle": {
+            "type": "minecraft:sculk_charge",
+            "roll": 3.141592654
+          },
+          "vertical_position": {
+            "offset": 1,
+            "type": "entity_position"
+          },
+          "horizontal_position": {
+            "type": "entity_position"
+          },
+          "horizontal_velocity": {
+            "base": 0
+          },
+          "vertical_velocity": {
+            "base": 0
+          }
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 20
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "nbt": "{components:{\"minecraft:custom_data\":{\"pklfdp:preSummon\":{}}}}"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "slots": [
+    "legs"
+  ],
+  "supported_items": "minecraft:chainmail_leggings",
+  "primary_items": [],
+  "weight": 1
+}

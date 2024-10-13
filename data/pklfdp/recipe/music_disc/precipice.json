@@ -1,0 +1,12 @@
+{
+	"type": "minecraft:stonecutting",
+  "group": "music_disc",
+  "ingredient": [
+    {
+      "tag": "pklfdp:music_disc"
+    }
+  ],
+	"result": {
+		"id": "minecraft:music_disc_precipice"
+	}
+}

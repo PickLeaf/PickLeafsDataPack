@@ -1,0 +1,136 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "pklfdp.enchantment.machine_crushing",
+    "fallback": "机器：粉碎"
+  },
+  "effects": {
+    "minecraft:location_changed": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:crushing/init"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "type": "minecraft:armor_stand",
+                "flags": {
+                  "is_on_ground": true
+                },
+                "stepping_on": {
+                  "block": {
+                    "blocks": "minecraft:decorated_pot"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                  "block": {
+                    "nbt": "{components:{\"minecraft:custom_data\":{\"pklfdp:HasMachine\":1b}}}"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "minecraft:tick": [
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:crushing/finalize"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 20
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                  "block": {
+                    "blocks": "minecraft:decorated_pot"
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "effect": {
+          "type": "minecraft:run_function",
+          "function": "pklfdp:crushing/run"
+        },
+        "requirements": {
+          "condition": "all_of",
+          "terms": [
+            {
+              "condition": "minecraft:entity_properties",
+              "entity": "this",
+              "predicate": {
+                "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
+                "periodic_tick": 20
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "offsetY": -1,
+                "predicate": {
+                  "block": {
+                    "nbt": "{item:{}}"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                "block": {
+                  "blocks": "#pklfdp:can_crushing"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 0,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "slots": [
+    "feet"
+  ],
+  "supported_items": "minecraft:leather_boots",
+  "primary_items": [],
+  "weight": 1
+}

@@ -1,0 +1,38 @@
+{
+  "anvil_cost": 4,
+  "description": {
+    "translate": "pklfdp.enchantment.ape_arm",
+    "fallback": "猿臂"
+  },
+  "effects": {
+    "attributes": [
+      {
+        "amount": 44,
+        "attribute": "minecraft:player.block_interaction_range",
+        "id": "pklfdp.enchantment.ape_arm",
+        "operation": "add_value"
+      },
+      {
+        "amount": 4,
+        "attribute": "minecraft:player.entity_interaction_range",
+        "id": "pklfdp.enchantment.ape_arm",
+        "operation": "add_value"
+      }
+    ]
+  },
+  "max_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "min_cost": {
+    "base": 1,
+    "per_level_above_first": 0
+  },
+  "max_level": 1,
+  "slots": [
+    "hand"
+  ],
+  "supported_items": "minecraft:totem_of_undying",
+  "primary_items": [],
+  "weight": 1
+}

@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:dragon_egg"
+  },
+  "base": {
+    "item": "minecraft:egg"
+  },
+  "addition": {
+    "item": "minecraft:netherite_block"
+  },
+	"result": {
+		"id": "minecraft:dragon_egg",
+		"count": 2
+	}
+}

@@ -1,0 +1,1 @@
+$function pklfdp:swing/init_clock_ma_ {time:$(time)}

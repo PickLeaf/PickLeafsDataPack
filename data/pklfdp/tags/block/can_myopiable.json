@@ -1,0 +1,29 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:andesite",
+    "minecraft:diorite",
+    "minecraft:granite",
+    "minecraft:soul_sand",
+    "minecraft:sandstone",
+    "minecraft:basalt",
+    "minecraft:blue_stained_glass",
+    "minecraft:honey_block",
+    "minecraft:blue_wool",
+    "minecraft:yellow_wool",
+    "minecraft:red_wool",
+    "minecraft:pink_wool",
+    "minecraft:magenta_wool",
+    "minecraft:amethyst_block",
+    "minecraft:moss_carpet",
+    "minecraft:moss_block",
+    "minecraft:dried_kelp_block",
+    "minecraft:purple_wool",
+    "minecraft:mud",
+    "minecraft:copper_block",
+    "minecraft:exposed_copper",
+    "minecraft:weathered_copper",
+    "minecraft:snow_block",
+    "minecraft:conduit"
+  ]
+}

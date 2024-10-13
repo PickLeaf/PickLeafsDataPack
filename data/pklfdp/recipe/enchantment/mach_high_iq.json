@@ -1,0 +1,26 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "misc",
+	"ingredients": [
+    {
+      "item": "minecraft:book"
+    },
+    {
+      "item": "minecraft:golden_carrot"
+    },
+    {
+      "item": "minecraft:golden_apple"
+    },
+    {
+      "item": "minecraft:honeycomb"
+    }
+  ],
+	"result": {
+		"id": "minecraft:enchanted_book",
+		"components": {
+			"minecraft:stored_enchantments": {
+        "pklfdp:mach_high_iq": 1
+      }
+		}
+	}
+}

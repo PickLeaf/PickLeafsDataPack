@@ -1,0 +1,29 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dirt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:dirt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_dirt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:dirt_variant/crimson_nylium",
+      "pklfdp:dirt_variant/grass_block",
+      "pklfdp:dirt_variant/mycelium",
+      "pklfdp:dirt_variant/podzol",
+      "pklfdp:dirt_variant/warped_nylium"
+    ]
+  }
+}

@@ -1,0 +1,16 @@
+{
+	"type": "minecraft:crafting_shapeless",
+	"category": "building",
+	"ingredients": [
+    {
+      "item": "minecraft:bone_meal"
+    },
+    {
+      "item": "minecraft:blue_orchid"
+    }
+  ],
+	"result": {
+		"id": "minecraft:blue_orchid",
+		"count": 2
+	}
+}

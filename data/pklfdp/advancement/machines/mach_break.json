@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_pickaxe": {
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:diamond_pickaxe"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_pickaxe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pklfdp:enchantment/mach_break"
+    ]
+  }
+}

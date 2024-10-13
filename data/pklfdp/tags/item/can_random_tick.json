@@ -1,0 +1,23 @@
+{
+  "replace": true,
+  "values": [
+    "minecraft:bamboo",
+    "minecraft:wheat",
+    "minecraft:beetroot",
+    "minecraft:carrot",
+    "minecraft:potato",
+    "minecraft:cocoa_beans",
+    "minecraft:pumpkin",
+    "minecraft:melon_slice",
+    "minecraft:cactus",
+    "minecraft:sugar_cane",
+    "minecraft:kelp",
+    "minecraft:twisting_vines",
+    "minecraft:weeping_vines",
+    "minecraft:pointed_dripstone",
+    "minecraft:amethyst_cluster",
+    "minecraft:sweet_berries",
+    "minecraft:glow_berries",
+    "minecraft:nether_wart"
+  ]
+}

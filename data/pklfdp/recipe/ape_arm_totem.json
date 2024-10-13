@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:totem_of_undying"
+  },
+  "addition": {
+    "item": "minecraft:netherite_ingot"
+  },
+	"result": {
+		"id": "minecraft:totem_of_undying",
+		"components": {
+      "minecraft:enchantments": {
+        "pklfdp:ape_arm": 1
+      }
+		}
+	}
+}

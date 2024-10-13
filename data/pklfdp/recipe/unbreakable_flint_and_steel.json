@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:flint_and_steel"
+  },
+  "addition": {
+    "item": "minecraft:iron_block"
+  },
+	"result": {
+		"id": "minecraft:flint_and_steel",
+		"components": {
+			"minecraft:unbreakable": {
+        "show_in_tooltip": true
+      }
+		}
+	}
+}
