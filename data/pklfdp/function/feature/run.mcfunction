@@ -1,4 +1,4 @@
-#execute if function pklfdp:feature/chk_pos \
+execute if function pklfdp:feature/chk_pos \
   run return fail
 
 data modify entity @s Health set value 16f
