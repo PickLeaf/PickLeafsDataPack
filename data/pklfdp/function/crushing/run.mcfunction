@@ -3,6 +3,12 @@ loot insert ~ ~-1 ~ mine ~ ~ ~ \
   minecraft:enchantments={"minecraft:silk_touch":1}]
 
 execute if function pklfdp:crushing/chk_r \
-  run return run function pklfdp:crushing/play
+  run function pklfdp:crushing/update_r
 
-data remove block ~ ~-1 ~ item
+data modify block ~ ~-1 ~ item \
+  set from entity @s \
+  ArmorItems[3].components."minecraft:custom_data".r
+
+setblock ~ ~ ~ minecraft:air
+playsound minecraft:block.anvil.step block @a
+particle minecraft:crit ~ ~1 ~ 0.2 0.2 0.2 0.1 10 normal
