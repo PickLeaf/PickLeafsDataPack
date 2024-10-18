@@ -1,0 +1,20 @@
+{
+	"type": "minecraft:smithing_transform",
+  "template": {
+    "item": "minecraft:netherite_upgrade_smithing_template"
+  },
+  "base": {
+    "item": "minecraft:shears"
+  },
+  "addition": {
+    "item": "minecraft:iron_block"
+  },
+	"result": {
+		"id": "minecraft:shears",
+		"components": {
+			"minecraft:unbreakable": {
+        "show_in_tooltip": true
+      }
+		}
+	}
+}
