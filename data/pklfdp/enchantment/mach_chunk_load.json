@@ -88,7 +88,7 @@
               "entity": "this",
               "predicate": {
                 "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
-                "periodic_tick": 20
+                "periodic_tick": 2
               }
             },
             {
@@ -97,6 +97,17 @@
                 "block": {
                   "state": {
                     "powered": "true"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": "{OutputSignal:100}"
                   }
                 }
               }
@@ -117,7 +128,7 @@
               "entity": "this",
               "predicate": {
                 "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
-                "periodic_tick": 20
+                "periodic_tick": 2
               }
             },
             {
@@ -126,6 +137,17 @@
                 "block": {
                   "state": {
                     "powered": "false"
+                  }
+                }
+              }
+            },
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:location_check",
+                "predicate": {
+                  "block": {
+                    "nbt": "{OutputSignal:100}"
                   }
                 }
               }
