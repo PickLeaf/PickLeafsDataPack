@@ -8,4 +8,3 @@ data modify entity @s \
   set value {id:"minecraft:air"}
 
 data remove block ~ ~-1 ~ item
-return fail

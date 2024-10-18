@@ -3,7 +3,7 @@ loot insert ~ ~-1 ~ mine ~ ~ ~ \
   minecraft:enchantments={"minecraft:silk_touch":1}]
 
 execute if function pklfdp:crushing/chk_r \
-  run function pklfdp:crushing/update_r
+  run function pklfdp:crushing/udt_r
 
 data modify block ~ ~-1 ~ item \
   set from entity @s \
