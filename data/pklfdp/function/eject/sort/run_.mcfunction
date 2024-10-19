@@ -7,6 +7,10 @@ execute unless block ~ ~-1 ~ \
 
 execute if data block ~ ~ ~ \
   item.components."minecraft:container"[0] \
-  run return run function pklfdp:eject/multi/chk
+  run return run function pklfdp:eject/multi/run
 
-function pklfdp:eject/sort/chk
+execute if function pklfdp:eject/sort/chk \
+  run return run data remove storage pklfdp:var temp.item
+
+data remove storage pklfdp:var temp.item
+function pklfdp:eject/sort/tp

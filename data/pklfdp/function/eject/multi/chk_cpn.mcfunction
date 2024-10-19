@@ -1,8 +1,6 @@
-execute if data entity @s Item.components \
-  run return run function pklfdp:eject/multi/chk_cpn_
-
-execute if data block ~ ~ ~ item.components \
+execute if data storage pklfdp:var temp.Items[0].item.components \
+  unless data entity @s Item.components \
   run return 1
 
-function pklfdp:eject/multi/chk_ma \
-  with entity @s Item
+return run data modify storage pklfdp:var temp.Items[0].item.components \
+  set from entity @s Item.components
