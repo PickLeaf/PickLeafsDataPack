@@ -1,0 +1,9 @@
+{
+  "function": "set_count",
+  "add": true,
+  "count": {
+    "type": "minecraft:storage",
+    "storage": "pklfdp:var",
+    "path": "temp.count"
+  }
+}

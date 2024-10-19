@@ -3,7 +3,7 @@ data remove storage pklfdp:r edotensei
 data remove storage pklfdp:r myopia
 data remove storage pklfdp:r random_tick
 data remove storage pklfdp:r feature
-data remove storage pklfdp:temp item
+data remove storage pklfdp:var temp
 
 summon creeper ~ ~ ~ {powered:true,ignited:true,ExplosionRadius:127}
 

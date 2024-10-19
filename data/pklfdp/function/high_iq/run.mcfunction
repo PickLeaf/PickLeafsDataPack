@@ -1,6 +1,6 @@
 execute positioned ~ ~-1 ~ \
   if function pklfdp:high_iq/chk \
-  run return fail
+  run return run data remove block ~ ~ ~ item
 
 execute positioned ~ ~-1 ~ \
   run function pklfdp:high_iq/mns/a \
