@@ -29,7 +29,7 @@ data modify storage pklfdp:r random_tick."minecraft:sugar_cane" \
   set value {block:"minecraft:sugar_cane",TH:2400,\
     item:"minecraft:sugar_cane"}
 data modify storage pklfdp:r random_tick."minecraft:kelp" \
-  set value {block:"minecraft:kelp",TH:3824,\
+  set value {block:"minecraft:kelp_plant",TH:3569,\
     item:"minecraft:kelp"}
 data modify storage pklfdp:r random_tick."minecraft:twisting_vines" \
   set value {block:"minecraft:twisting_vines",TH:3824,\

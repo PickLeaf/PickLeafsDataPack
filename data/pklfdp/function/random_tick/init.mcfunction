@@ -33,24 +33,23 @@ scoreboard players set A pklfdp.Calc 16
 execute store result score B pklfdp.Calc run data get entity @s Pos[0]
 scoreboard players operation B pklfdp.Calc /= A pklfdp.Calc
 execute store result entity @s \
-  ArmorItems[3].components."minecraft:custom_data"."pklfdp:storage".x \
+  ArmorItems[3].components."minecraft:custom_data".x \
   int 16 run scoreboard players get B pklfdp.Calc
 
 execute store result score B pklfdp.Calc run data get entity @s Pos[1]
 scoreboard players operation B pklfdp.Calc /= A pklfdp.Calc
 execute store result entity @s \
-  ArmorItems[3].components."minecraft:custom_data"."pklfdp:storage".y \
+  ArmorItems[3].components."minecraft:custom_data".y \
   int 16 run scoreboard players get B pklfdp.Calc
 
 execute store result score B pklfdp.Calc run data get entity @s Pos[2]
 scoreboard players operation B pklfdp.Calc /= A pklfdp.Calc
 execute store result entity @s \
-  ArmorItems[3].components."minecraft:custom_data"."pklfdp:storage".z \
+  ArmorItems[3].components."minecraft:custom_data".z \
   int 16 run scoreboard players get B pklfdp.Calc
 
 scoreboard objectives remove pklfdp.Calc
-#
 
 execute align xyz positioned ~0.5 ~-0.3 ~0.5 \
   run function pklfdp:random_tick/init_ with entity @s \
-  ArmorItems[3].components."minecraft:custom_data"."pklfdp:storage"
+  ArmorItems[3].components."minecraft:custom_data"

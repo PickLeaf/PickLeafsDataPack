@@ -88,7 +88,7 @@
               "entity": "this",
               "predicate": {
                 "nbt": "{Tags:[\"pklfdp.IsMachine\"]}",
-                "periodic_tick": 8
+                "periodic_tick": 50
               }
             },
             {
@@ -117,7 +117,7 @@
               "entity": "this",
               "predicate": {
                 "nbt": "{Tags:[\"pklfdp.IsMachine\"],HurtTime:0s}",
-                "periodic_tick": 1200
+                "periodic_tick": 200
               }
             }
           ]

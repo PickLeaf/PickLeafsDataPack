@@ -1,7 +1,13 @@
-function pklfdp:random_tick/get_r_ma with entity @s HandItems[0]
+execute unless function pklfdp:random_tick/get_r \
+  run return run function pklfdp:random_tick/miss_r
+
+data modify block ~ ~ ~ \
+  components."minecraft:custom_data".item \
+  set from entity @s \
+  ArmorItems[3].components."minecraft:custom_data".r.item
 
 function pklfdp:random_tick/get_blc with entity @s \
-  ArmorItems[3].components."minecraft:custom_data"."pklfdp:storage"
+  ArmorItems[3].components."minecraft:custom_data"
 
 execute store result entity @s HurtTime short 1 \
   run random value 1200..12000
