@@ -1,3 +1,5 @@
+fill ~-1 ~ ~-1 ~16 ~ ~16 \
+  minecraft:cobblestone replace #pklfdp:can_place_replace
 fill ~ ~ ~ ~15 ~ ~15 minecraft:air \
   replace #pklfdp:chunk_clear_cleanable
 fill ~ ~ ~ ~15 ~ ~15 minecraft:air \

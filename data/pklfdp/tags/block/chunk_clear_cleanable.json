@@ -22,6 +22,13 @@
     "minecraft:kelp",
     "minecraft:kelp_plant",
     "minecraft:seagrass",
-    "minecraft:sea_pickle"
+    "minecraft:sea_pickle",
+    "minecraft:soul_sand",
+    "minecraft:soul_soil",
+    "minecraft:crimson_roots",
+    "minecraft:warped_roots",
+    "minecraft:warped_nylium",
+    "minecraft:crimson_nylium",
+    "minecraft:nether_sprouts"
   ]
 }

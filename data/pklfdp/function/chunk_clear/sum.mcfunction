@@ -20,5 +20,5 @@ execute store result entity @s Pos[2] double 1 \
   run scoreboard players get B pklfdp.Calc
 
 scoreboard objectives remove pklfdp.Calc
-execute at @s run teleport @s ~0.5 ~ ~0.5
+execute at @s run teleport @s ~0.1 ~-1 ~0.1
 execute at @s run function pklfdp:chunk_clear/rpt
